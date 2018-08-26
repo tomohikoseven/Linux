@@ -1,0 +1,48 @@
+*** memory map before memory allocation ***
+00010000-00011000 r-xp 00000000 b3:02 272003     /home/pi/Linux/LinuxWorks/Part5/mmap
+00020000-00021000 r--p 00000000 b3:02 272003     /home/pi/Linux/LinuxWorks/Part5/mmap
+00021000-00022000 rw-p 00001000 b3:02 272003     /home/pi/Linux/LinuxWorks/Part5/mmap
+018a8000-018ca000 rw-p 00000000 00:00 0          [heap]
+76d80000-76ea9000 r-xp 00000000 b3:02 1905       /lib/arm-linux-gnueabihf/libc-2.24.so
+76ea9000-76eb9000 ---p 00129000 b3:02 1905       /lib/arm-linux-gnueabihf/libc-2.24.so
+76eb9000-76ebb000 r--p 00129000 b3:02 1905       /lib/arm-linux-gnueabihf/libc-2.24.so
+76ebb000-76ebc000 rw-p 0012b000 b3:02 1905       /lib/arm-linux-gnueabihf/libc-2.24.so
+76ebc000-76ebf000 rw-p 00000000 00:00 0 
+76ecf000-76ed4000 r-xp 00000000 b3:02 10410      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ed4000-76ee3000 ---p 00005000 b3:02 10410      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ee3000-76ee4000 r--p 00004000 b3:02 10410      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ee4000-76ee5000 rw-p 00005000 b3:02 10410      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ee5000-76f06000 r-xp 00000000 b3:02 1858       /lib/arm-linux-gnueabihf/ld-2.24.so
+76f10000-76f15000 rw-p 00000000 00:00 0 
+76f15000-76f16000 r--p 00020000 b3:02 1858       /lib/arm-linux-gnueabihf/ld-2.24.so
+76f16000-76f17000 rw-p 00021000 b3:02 1858       /lib/arm-linux-gnueabihf/ld-2.24.so
+7ebbe000-7ebdf000 rw-p 00000000 00:00 0          [stack]
+7ed8c000-7ed8d000 r-xp 00000000 00:00 0          [sigpage]
+7ed8d000-7ed8e000 r--p 00000000 00:00 0          [vvar]
+7ed8e000-7ed8f000 r-xp 00000000 00:00 0          [vdso]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+
+*** succeeded to allocate memory: address = 0x70980000; size = 0x6400000 ***
+*** memory map after memory allocation ***00010000-00011000 r-xp 00000000 b3:02 272003     /home/pi/Linux/LinuxWorks/Part5/mmap
+00020000-00021000 r--p 00000000 b3:02 272003     /home/pi/Linux/LinuxWorks/Part5/mmap
+00021000-00022000 rw-p 00001000 b3:02 272003     /home/pi/Linux/LinuxWorks/Part5/mmap
+018a8000-018ca000 rw-p 00000000 00:00 0          [heap]
+70980000-76d80000 rw-p 00000000 00:00 0 
+76d80000-76ea9000 r-xp 00000000 b3:02 1905       /lib/arm-linux-gnueabihf/libc-2.24.so
+76ea9000-76eb9000 ---p 00129000 b3:02 1905       /lib/arm-linux-gnueabihf/libc-2.24.so
+76eb9000-76ebb000 r--p 00129000 b3:02 1905       /lib/arm-linux-gnueabihf/libc-2.24.so
+76ebb000-76ebc000 rw-p 0012b000 b3:02 1905       /lib/arm-linux-gnueabihf/libc-2.24.so
+76ebc000-76ebf000 rw-p 00000000 00:00 0 
+76ecf000-76ed4000 r-xp 00000000 b3:02 10410      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ed4000-76ee3000 ---p 00005000 b3:02 10410      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ee3000-76ee4000 r--p 00004000 b3:02 10410      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ee4000-76ee5000 rw-p 00005000 b3:02 10410      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ee5000-76f06000 r-xp 00000000 b3:02 1858       /lib/arm-linux-gnueabihf/ld-2.24.so
+76f10000-76f15000 rw-p 00000000 00:00 0 
+76f15000-76f16000 r--p 00020000 b3:02 1858       /lib/arm-linux-gnueabihf/ld-2.24.so
+76f16000-76f17000 rw-p 00021000 b3:02 1858       /lib/arm-linux-gnueabihf/ld-2.24.so
+7ebbe000-7ebdf000 rw-p 00000000 00:00 0          [stack]
+7ed8c000-7ed8d000 r-xp 00000000 00:00 0          [sigpage]
+7ed8d000-7ed8e000 r--p 00000000 00:00 0          [vvar]
+7ed8e000-7ed8f000 r-xp 00000000 00:00 0          [vdso]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
